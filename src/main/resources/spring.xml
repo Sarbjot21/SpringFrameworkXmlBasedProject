@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <!--
+        Bean with Constructor Argument and Property Injection.
+        <constructor-arg> values are injected using parameterised constructor, so it needs to be defined before we can use it.
+        Similarly, <property> tag values are injected through Setter methods.
+    -->
+    <bean name="doctor" id="doctor" class="com.spring.model.Doctor">
+        <property name="qualification" value="MBS"></property>
+        <constructor-arg value="101"></constructor-arg>
+        <constructor-arg value="Sameer"></constructor-arg>
+    </bean>
+</beans>
